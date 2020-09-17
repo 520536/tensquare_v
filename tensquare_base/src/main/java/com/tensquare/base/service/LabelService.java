@@ -74,6 +74,9 @@ public class LabelService {
         //封装了一个分页对象，在springdatajpa中想要实现分页，直接传一个分页对象即可
         Pageable pageable = PageRequest.of(page-1, size);
         return labelDao.findAll(new Specification<Label>(){
+            /*
+            * root 根对象 query封装关键字 cb封装条件对象
+            * */
             @Override
             public Predicate toPredicate(Root<Label> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
                 List<Predicate> list = new ArrayList<>();

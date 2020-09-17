@@ -1,9 +1,9 @@
 package com.tensquare.base.controller;
 
-import entity.Result;
-import entity.StatusCode;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RestControllerAdvice;
+        import entity.Result;
+        import entity.StatusCode;
+        import org.springframework.web.bind.annotation.ExceptionHandler;
+        import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
 public class LabelExceptionHandler {
